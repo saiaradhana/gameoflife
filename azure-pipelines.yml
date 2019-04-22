@@ -2,6 +2,10 @@
 - task: PublishBuildArtifacts@1
   inputs:
     ArtifactName: 'gol'
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectedServiceName: 'Free Trial (c350c06a-7784-4af9-baec-605e4d3773b0)'
+    WebAppName: 'deploymentosi'
 # Build your Java project and run tests with Apache Maven.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
